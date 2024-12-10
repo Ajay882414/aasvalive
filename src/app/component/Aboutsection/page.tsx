@@ -2,9 +2,7 @@
 import React, { useEffect, useState } from "react";
 
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import Speed from '../../../../public/Speed.png'
-import Innovation from '../../../../public/Innovation.png'
-import Security from '../../../../public/Security.png'
+
 import Footer from "../../Footer/page";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 interface FAQ {
@@ -13,7 +11,6 @@ interface FAQ {
 }
 import "aos/dist/aos.css";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Page() {
   // Capitalize component name
@@ -235,8 +232,8 @@ export default function Page() {
             {/* Feature Card */}
             <div className="group bg-white p-10 rounded-2xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all ease-in-out" data-aos="fade">
               <div className="flex justify-center mb-8">
-                <Image
-                  src={Speed}
+                <img
+                  src="/speed.png"
                   alt="Speed Icon"
                   className="w-20 h-20 group-hover:scale-125 transition-transform duration-300"
                 />
@@ -269,8 +266,8 @@ export default function Page() {
             {/* Feature Card */}
             <div className="group bg-white p-10 rounded-2xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all ease-in-out" data-aos="fade">
               <div className="flex justify-center mb-8">
-                <Image
-                  src={Security}
+                <img
+                  src="/security.png"
                   alt="Security Icon"
                   className="w-20 h-20 group-hover:scale-125 transition-transform duration-300"
                 />
@@ -286,8 +283,8 @@ export default function Page() {
             {/* Feature Card */}
             <div className="group bg-white p-10 rounded-2xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all ease-in-out" data-aos="fade">
               <div className="flex justify-center mb-8">
-                <Image
-                  src={Innovation}
+                <img
+                  src="/innovation.png"
                   alt="Innovation Icon"
                   className="w-20 h-20 group-hover:scale-125 transition-transform duration-300"
                 />
